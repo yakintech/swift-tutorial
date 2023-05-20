@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>Diff</key>
+	<array>
+		<dict>
+			<key>ModifiedContent</key>
+			<string>//Değişken adı özel karakter içeremez!
+//Değişken adında türkçe vb karakterler kullanılmaz!
+//değişken adında sayı kullanılmaz!
+//değişken adları küçük harfle başlar!
+
+var name = "Çağatay"
+
+//var keyword ile tanımlanan değişkenin değeri sonradan değiştirilebilir.
+name = "Aykut"
+name = "Gizem"
+print(name) // Gizem
+
+
+//let keyword ile tanımladığım bir değişkeni değiştiremem
+//  let surname = "Yıldız"
+//  surname = "Arslan"
+
+
+//değişkenler oluşuturulduğu an tipiyle birlikte tanımlanabilir
+    //Int data tipi tam sayıları tutar. ( negatif veya pozitif)
+var age : Int = 18
+var number : UInt8 = 99
+
+//Int8 is an Integer type which can store positive and negative values.
+//UInt8 is an unsigned integer which can store only positive values.
+
+
+//Float ( 32-bit ) ve double ( 64-bit ) ondalıklı değer tutuculardır.
+var rate : Float = 1.2
+var rate2 : Double = 2.2
+
+var onlineStatus : Bool = true
+
+
+
+var city = "İstanbul"
+print("Hello " + city)
+print("Hello \(city)")
+
+
+
+
+
+var userNumber1 = "13"
+var userNumber2 = "12"
+
+//Yukarıdaki iki değeri böl ve sonucu ondalıklı bir şekilde print et
+
+var result : Double = Double(userNumber1)! / Double(userNumber2)!
+
+print(result)
+
+
+// Aritmetic Operators
+// Addition (+)
+// Subtraction (-)
+// Multiplication (*)
+// Division (/)
+
+
+//Remainder Operator %
+var userNumber = 10
+var result2 = userNumber % 7
+
+print(result2)
+
+
+var number3 = 10;
+//numbe3 = number3 + 10
+number3 += 10
+
+print(number3)
+
+//Comparison Operators
+var data1 : Int = 10
+var data2 : Int = 5
+var result4 = data1 &lt; data2
+print(result4)
+
+
+
+var data3 : String = "Çağatay"
+var data4 : String = "çağatay"
+
+print(data3 == data4) // false
+print(data3 != data4) // true
+
+
+
+
+</string>
+			<key>ModifiedRange</key>
+			<string>{0, 1667}</string>
+			<key>OriginalContent</key>
+			<string></string>
+			<key>OriginalRange</key>
+			<string>{0, 0}</string>
+		</dict>
+	</array>
+	<key>File</key>
+	<string>Chapters/Chapter1.playgroundchapter/Pages/My Playground.playgroundpage/main.swift</string>
+</dict>
+</plist>

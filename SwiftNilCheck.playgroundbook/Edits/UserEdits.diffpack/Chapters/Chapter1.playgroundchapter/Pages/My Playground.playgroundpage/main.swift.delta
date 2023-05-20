@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>Diff</key>
+	<array>
+		<dict>
+			<key>ModifiedContent</key>
+			<string>var number : Int?
+
+
+//optinal int bir değer ile int bir değer çarpılamaz! aşağıdaki kod hata verir
+//  var result = number * 22
+
+//number yanına koyduğum ! işareti sayesinde force unwrap kullanarak int hale getiriyorum. ( number nil gelirse kod burada patlar)
+//  var result = number! * 22
+
+
+
+//number eğer nil gelirse onun default değerini 1 olarak ata ( ?? Nil-Coalescing Operator)
+var result = number ?? 1 * 22
+
+
+var number2 : Int
+//number 2 ye nil atama yapılamaz! çünkü default olarak nil değer almasını engelledik. ( ? karakteri nil değer de alabilmesini sağlıyor)
+//  number2 = nil
+
+
+
+
+
+
+var number3: Int!
+
+number3 = nil
+number3 = 5
+
+print(number3)
+var number4 = number3 * 22
+
+
+
+
+
+
+</string>
+			<key>ModifiedRange</key>
+			<string>{1, 689}</string>
+			<key>OriginalContent</key>
+			<string></string>
+			<key>OriginalRange</key>
+			<string>{1, 0}</string>
+		</dict>
+	</array>
+	<key>File</key>
+	<string>Chapters/Chapter1.playgroundchapter/Pages/My Playground.playgroundpage/main.swift</string>
+</dict>
+</plist>
