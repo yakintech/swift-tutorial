@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>Diff</key>
+	<array>
+		<dict>
+			<key>ModifiedContent</key>
+			<string>var homePrices = [3000, 4000, 2000, 10000, 22000, 1500, 4750, 7000, 5600]
+
+//aylık kirası 4000 - 5000 arası olan ev kiralarını print et
+
+for home in homePrices{
+    
+    if(home &gt;= 4000 &amp;&amp; home &lt;= 5000 ){
+        print(home)
+    }
+    
+}
+
+var productPrices = [ 55.0, 100.0, 220.0, 40.0, 300.0, 400.0]
+
+//yukarıdaki ürünlerin kdv li fiyatlarını ekrana yazsın. ürün fiyatı 200 den büyükse KDV %18 değilse %8 hesaplanır
+for item in productPrices{
+    
+    if(item &gt; 200){
+        print(item * 1.18)
+    }
+    else{
+        print(item * 1.08)
+    }
+}
+
+
+
+var countries : [String] = ["Turkey", "ABD", "Greece", "Iran", "Rusya", "Germany"]
+
+//Kaç adet country var?
+var length = 0
+
+for item in countries{
+    length = length + 1
+}
+
+
+
+//Harf sayısı 5 den büyük olan ülkeleri ekrana yaz
+
+//count özelliği ile string metnin içerisinde kaç karakter var ona bakıyoruz. Eğer karakter sayısı 5 den büyükse print ediyoruz!
+for item in countries{
+    
+    if item.count &gt; 5 {
+        print(item)
+    }
+    
+}
+
+
+//1 den 100 kadar olan 2 VE 3 e tam bölünebilen sayılar nelerdir?
+
+for index in 1...100{
+    
+    if(index % 2 == 0 &amp;&amp; index % 3 == 0){
+        print(index)
+    }
+    
+}
+
+
+
+
+
+
+
+
+</string>
+			<key>ModifiedRange</key>
+			<string>{1, 1172}</string>
+			<key>OriginalContent</key>
+			<string></string>
+			<key>OriginalRange</key>
+			<string>{1, 0}</string>
+		</dict>
+	</array>
+	<key>File</key>
+	<string>Chapters/Chapter1.playgroundchapter/Pages/My Playground.playgroundpage/main.swift</string>
+</dict>
+</plist>

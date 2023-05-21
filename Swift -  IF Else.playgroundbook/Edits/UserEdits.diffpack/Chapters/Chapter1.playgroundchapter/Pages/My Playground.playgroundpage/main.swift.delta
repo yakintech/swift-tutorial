@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>Diff</key>
+	<array>
+		<dict>
+			<key>ModifiedContent</key>
+			<string>let number1 = 10
+let number2 = 5
+
+let result = number1 &lt; number2
+
+
+let onlineStatus = true
+
+//onlineStatus değişkeni EĞER true ise scope içerisindeki kod çalışır. 
+if onlineStatus == true {
+    print("User Online!!")
+}
+
+
+let price = 120
+
+//Eğer fiyat 100 den büyükse ekrana "Bu ürün çok pahalı" yazsın. DEĞİLSE "sorun yok" yazsın
+
+//Else keyword if koşulu sağlanmazsa çalışır
+if price &gt; 100{
+    print("Bu ürün çok pahalı!")
+}
+else{
+    print("sorun yok")
+}
+
+
+//Kullanıcı adı cagatay VE şifre 123 ise giriş yapsın (ekrana giriş başarılı yazsın!) DEĞİLSE "Kullanıcı adı veya şifre hatalı yazsın"
+
+let userName = "cagatay"
+let password = "123"
+
+
+
+//&amp;&amp; VE bağlacı sağ ve sol koşulların birlikte TRUE olmasını ister
+if (userName == "cagatay" &amp;&amp; password == "123"){
+    print("Giriş BAŞARILI!")
+}
+else{
+    print("Kullanıcı adı veya şifre hatalı!")
+}
+
+
+
+let answer1 = "a"
+let answer2 = "a"
+let answer3 = "b"
+
+//Kullanıcı eğer 3 sorudan herhangi ikisine a dediyse ekrana POPUP yazsın değilse başarısız yazsın
+
+if (answer1 == "a" &amp;&amp; answer2 == "a") || (answer2 == "a" &amp;&amp; answer3 == "a") || (answer1 == "a" &amp;&amp; answer3 == "a"){
+    print("POPUP")
+}
+else{
+    print("Başarısız")
+}
+
+
+
+
+
+//Hava sıcaklığı 0-10 arasında ise SOĞUK 20-30 arasında ise ÇİÇEK 30 dan yüksekse BUNALTICI yazsın
+
+let temp = -10
+
+if temp &gt; 0 &amp;&amp; temp &lt;= 10{
+    print("SOĞUK")
+}
+else if(temp &gt; 10 &amp;&amp; temp &lt; 20){
+    print("Çiçek")
+}
+else if(temp &gt;= 20){
+    print("Bunaltıcı")
+}
+else{
+    print("Enteresan bir hava")
+}
+
+
+
+// Bir sayı tanımla. Eğer sayı tek ise ekrana "SAYI TEK" çiftse "SAYI ÇİFT" yazdırsın
+
+let number = 55
+
+if number % 2 == 0 {
+    print("Sayı ÇİFT")
+}
+else{
+    print("Sayı TEK")
+}
+
+
+// bir sınav notu tanımla. Eğer not 50 den büyükse "GEÇTİ" küçükse "KALDI" yazsın. NOT 0 dan düşük veya 100 den büyük olursa "BÖYLE BİR NOT OLAMAZ"
+
+let point = 10
+
+if point &gt; 50 &amp;&amp; point &lt;= 100 {
+    print("GEÇTİ")
+}
+else if point &lt; 50 &amp;&amp; point &gt;= 0{
+    print("KALDI")
+}
+else{
+    print("BÖYLE BİR NOT OLAMAZ")
+}
+
+
+
+
+
+
+
+
+
+
+
+</string>
+			<key>ModifiedRange</key>
+			<string>{1, 1991}</string>
+			<key>OriginalContent</key>
+			<string></string>
+			<key>OriginalRange</key>
+			<string>{1, 0}</string>
+		</dict>
+	</array>
+	<key>File</key>
+	<string>Chapters/Chapter1.playgroundchapter/Pages/My Playground.playgroundpage/main.swift</string>
+</dict>
+</plist>

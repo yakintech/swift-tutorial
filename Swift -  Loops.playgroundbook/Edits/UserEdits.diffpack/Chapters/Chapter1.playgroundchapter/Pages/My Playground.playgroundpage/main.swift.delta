@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>Diff</key>
+	<array>
+		<dict>
+			<key>ModifiedContent</key>
+			<string>//Swift Döngüler
+
+//for
+
+let names : [String] = ["Çağatay", "Aykut", "Müge", "Murat", "Can"]
+
+//Her elemanı ekrana print et
+//in kelimesinin sağ tarafına array yazdık. Yani listemizi. sol tarafındaki item ise bizim oluşturduğumuz geçici bir değişken
+for item in names{
+//      print(item)
+}
+
+
+//Aşağıdaki döngü 1 den 100 e kadar ( 100 dahil ) olan sayıları yazdırır.
+//  for index in 1...100{
+//      print(index)
+//  }
+
+
+//1 den 50 ye kadar olan TEK sayıları PRINT ET
+for index in 1...50{
+    if index % 2 == 1{
+        //print(index)
+    }
+}
+
+
+var number = 10
+number = number + 30 
+//  print(number)
+
+//1 den 10 a kadar olan sayıların toplamı nedir? 1+2+3+4+5
+var total = 0
+for index in 1...10{
+    total = total + index
+}
+
+
+
+
+var numbers = [3 , 10, 22, 2, 55]
+//Dizideki sayıların toplamı nedir???
+
+var totalNumber = 0
+
+for x in numbers{
+    totalNumber = totalNumber + x
+}
+//print(totalNumber)
+
+
+
+var prices = [40.0, 15.0, 80.0, 11.0, 10.0, 100.0, 66.0]
+
+// prices dizisindeki en pahalı elemanın fiyatını ekrana yazdır
+var maxNumber = prices[0]
+
+for item in prices{
+    if(item &gt; maxNumber){
+        maxNumber = item
+    }
+}
+print(maxNumber)
+
+
+
+// prices dizisindeki en ucuz elemanın fiyatını ekrana yazdır
+var minNumber = prices[0]
+
+for item in prices{
+    if(item &lt; minNumber){
+        minNumber = item
+    }
+}
+
+print(minNumber)
+
+
+//ortalama ürün fiyatı nedir?
+
+var totalPrice = 0.0
+for item in prices{
+    totalPrice = totalPrice + item
+}
+
+
+var result = totalPrice / 7.0
+//  print(result)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</string>
+			<key>ModifiedRange</key>
+			<string>{0, 1518}</string>
+			<key>OriginalContent</key>
+			<string></string>
+			<key>OriginalRange</key>
+			<string>{0, 0}</string>
+		</dict>
+	</array>
+	<key>File</key>
+	<string>Chapters/Chapter1.playgroundchapter/Pages/My Playground.playgroundpage/main.swift</string>
+</dict>
+</plist>
