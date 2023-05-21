@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>Diff</key>
+	<array>
+		<dict>
+			<key>ModifiedContent</key>
+			<string>//Swift Functions
+
+
+//hello fonksiyonun adını belirtir. {} içerisine yazdığımız operasyon fonksiyonun gövdesidir
+func hello() {
+    print("Hello SWIFT!!")
+}
+
+
+//fonksiyonu () işaretleriyle çağırdım ( CALL ETTİM!)
+hello()
+
+
+//Bu fonksiyon dışarıdan bir fiyat alacak ve o fiyatın KDV li halini print edecek ( KDV %18)//price fonksiyonun dışarıdan alacağı parametreye verdiğimiz isme denir!
+
+func  kdvCalc(price:Double) {
+    print(price * 1.18)
+}
+
+kdvCalc(price:100.0)
+
+func printFullName(name:String, surname:String){
+    print(name + " " + surname)
+}
+
+printFullName(name: "Çağatay", surname: "Yıldız")
+
+
+
+
+//Aşağıdaki fonksiyon dışarıdan aldığı iki sayıyı çarpıp sonucu RETURN EDER!!!!
+
+func  calcTwoNumbers(number1:Int, number2:Int) -&gt; Int {
+    var result = number1 * number2
+    
+    return result
+}
+
+var x = calcTwoNumbers(number1: 50, number2: 10)
+
+import Foundation
+
+//pow function swift içerisinde bir fonksiyondur
+var powerOfNumbers = pow(2, 4)
+print(powerOfNumbers)
+
+
+
+
+func kdvCalc(price:Double, taxRate:Double = 1.18) {
+    
+    var result = price * taxRate
+    
+    print(result)
+    
+}
+
+kdvCalc(price: 100)
+kdvCalc(price: 100,taxRate: 1.08)
+
+
+
+
+
+func countryPhone(countryCode:String = "90", phoneNumber:String) {
+    
+    print("+" + countryCode + phoneNumber)
+    
+}
+
+
+countryPhone(phoneNumber: "5437331470")
+countryPhone(countryCode: "99", phoneNumber: "5437331470")
+
+
+
+
+
+
+
+
+
+
+
+</string>
+			<key>ModifiedRange</key>
+			<string>{1, 1393}</string>
+			<key>OriginalContent</key>
+			<string></string>
+			<key>OriginalRange</key>
+			<string>{1, 0}</string>
+		</dict>
+	</array>
+	<key>File</key>
+	<string>Chapters/Chapter1.playgroundchapter/Pages/My Playground.playgroundpage/main.swift</string>
+</dict>
+</plist>
