@@ -1,0 +1,159 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>Diff</key>
+	<array>
+		<dict>
+			<key>ModifiedContent</key>
+			<string>var cities : [String] = ["İstanbul", "İzmir", "Ankara", "Aydın"]
+
+//append mevcut diziye yeni bir eleman ekler
+cities.append("Hatay")
+
+
+//NOT: count property ile dizinin eleman sayısını belirtirim.
+print(cities.count)
+
+
+//insert function mevcut dizinin belirtilen konumuna (yani index numarasına ) bir eleman ekler
+cities.insert("Trabzon", at: 2)
+print(cities)
+
+//remove function mevcut dizinin belirtilen konumundan elemanı çıkarır
+
+var cartItems = ["Margarita", "4 peynirli", "Mantar", "Bal kabağı", "Sucuklu"]
+
+
+cartItems.remove(at: 1)
+print(cartItems)
+
+//reverse fonksiyonu mevcut diziyi TERSİNE ÇEVİRİR
+var users = ["Çağatay", "Merve", "Ahmet", "Murat", "Begüm", "Aykut", "Müge", "Ertan"]
+
+users.reverse()
+
+print(users)
+
+
+var foods = ["Margarita", "4 peynirli", "Mantar", "Bal kabağı", "Sucuklu", "Mantı", "Tost", "Mantar", "Peperoni", "Ton Balıklı"]
+
+//contains fonksiyonu ile elemanın olup olmadığı kontrol edilir. Küçük büyük harf DUYARLI!
+print(foods.contains("Mantı"))
+
+
+//firstIndex fonksiyonu içerisine aldığı keliemeye eşit İLK indexi bana verir
+//Adı Mantı olan yemeği diziden çıkarmak istiyorum!!
+//Öncelikle Mantı nın index numarasını buluyorum
+
+//  var removeIndexNo = foods.firstIndex(of: "Mantı")
+//  
+//  if(removeIndexNo != nil){
+//      foods.remove(at: removeIndexNo!)
+//  }
+//  
+
+//Adı Mantar olan yemeği diziden çıkar( dizideki son mantı)
+
+var removeIndexNo = foods.lastIndex(of: "Mantar")
+foods.remove(at: removeIndexNo!)
+
+print(foods)
+
+
+
+var students = ["Çağatay", "Merve", "Ahmet", "Murat", "Begüm", "Aykut", "Müge", "Ertan", "Xavi"]
+// Yukarıdaki dizide içerisinde e harfi geçen elemanları print et
+
+
+for item in students{
+    if(item.lowercased().contains("e")){
+        print(item)
+    }
+}
+
+
+
+//first ve last ARRAY METOTLARI içerisinde aldığı koşula uygun BİR ADET elemanı bana verir.
+
+//Yukarıdaki dizide içerisinde a harfi geçen İLK elemanı ekrana yazdır.
+
+var resultStudent = students.first(where: {$0.contains("a")})
+print(resultStudent)
+
+
+    //Yukarıdaki dizide içerisinde a harfi geçen SON elemanı bana ver
+
+var resultStuden2 = students.last(where: {$0.contains("a")})
+
+
+
+//Yukarıdaki dizide ismi M harfiyle başlayan elemanı ekrana yaz
+
+var resultStudent3 = students.first(where: {$0.starts(with: "M")})
+
+print(resultStudent3)
+
+
+var country = "Turkey"
+
+//starts fonksiyonu mevcut stringin ne ile başladığını CHECK EDER
+print(country.starts(with: "T"))
+
+//end - hasSuffix
+print(country.hasSuffix("y"))
+
+
+
+//içerisinde a harfi geçen öğrencileri ekrana yaz!!
+var filteredStudents2 = students.filter({$0.contains("a")})
+print(filteredStudents2)
+
+
+//a ile başlayan öğrencileri ekrana yaz
+var filteredStudents3 = students.filter({$0.starts(with: "A")})
+print(filteredStudents3)
+
+
+//2. yol
+var filteredStudents = students.filter{
+    item in 
+    return item.contains("a")
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</string>
+			<key>ModifiedRange</key>
+			<string>{1, 2830}</string>
+			<key>OriginalContent</key>
+			<string></string>
+			<key>OriginalRange</key>
+			<string>{1, 0}</string>
+		</dict>
+	</array>
+	<key>File</key>
+	<string>Chapters/Chapter1.playgroundchapter/Pages/My Playground.playgroundpage/main.swift</string>
+</dict>
+</plist>

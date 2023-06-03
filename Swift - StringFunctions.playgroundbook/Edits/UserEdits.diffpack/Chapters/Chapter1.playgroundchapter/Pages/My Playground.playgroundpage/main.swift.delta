@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>Diff</key>
+	<array>
+		<dict>
+			<key>ModifiedContent</key>
+			<string>import Foundation
+//STRING FUNCTIONS ( METHODS )
+
+
+var name : String = "PİZZA"
+
+//lowercased function metindeki tüm karakterleri küçültür
+print(name.lowercased())
+
+
+//uppercased function metindeki tüm karakterleri büyültür
+var firstName : String = "çağatay"
+print(firstName.uppercased())
+
+
+//trim function metindeki sağ ve sol boşlukları temizler
+var productName : String = "   IPhone"
+print(productName.trimmingCharacters(in: .whitespaces))
+
+
+//append function
+var city : String = "istanbul"
+city.append(" izmir")
+print(city)
+
+
+//replace string function ile metnin içerisindeki bir kelimeyi başka bir kelimeyle değiştirebilirim
+var par : String = "Turkey 78291, Turkey 8726, Turkey 6253, Turkey 823823"
+
+print(par.replacingOccurrences(of: "Turkey", with: "Türkiye"))
+
+
+//contains function bir stringin içerisinde belirtilen metnin olup olmadıgına bakar. Varsa TRUE yoksa FALSE döner
+
+var foods: String = "pizza/tost/hamburger/chessburger/ mantı"
+
+var searchWord : String = "Pizza"
+print(foods.contains(searchWord.lowercased()))
+
+
+//split
+var result  = foods.split(separator: "/")
+print(result)
+
+//remove
+var data : String = "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting"
+
+
+print(data.remove(at: data.startIndex))
+
+
+
+
+
+
+
+
+
+</string>
+			<key>ModifiedRange</key>
+			<string>{1, 1511}</string>
+			<key>OriginalContent</key>
+			<string></string>
+			<key>OriginalRange</key>
+			<string>{1, 0}</string>
+		</dict>
+	</array>
+	<key>File</key>
+	<string>Chapters/Chapter1.playgroundchapter/Pages/My Playground.playgroundpage/main.swift</string>
+</dict>
+</plist>
