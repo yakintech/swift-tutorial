@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>Diff</key>
+	<array>
+		<dict>
+			<key>ModifiedContent</key>
+			<string>//Array Methods Samples
+
+
+var names = ["Çağatay", "Aykut", "Müge", "Ali", "Ertan", "Ece", "Gizem", "Murat", "İlhan", "Hakan", "Merve", "Ayça", "Aylin", "Deniz", "Taha", "İlayda", "Berkin", "Yunus", "Berca"]
+
+
+
+//içerisinde a harfi geçen elemanLARI print et (FILTER) Burada BÜYÜK A harfi ile başlayan elemanları print etmez!
+var result = names.filter({$0.contains("a")})
+print(result)
+
+//BUG FIX
+var result2 = names.filter({$0.lowercased().contains("a")})
+print(result2)
+
+//d harfi ile başlayan elemanLARI print et
+var result3 = names.filter({$0.lowercased().starts(with: "d")})
+print(result3)
+
+//içerisinde e harfi geçen kaç adet name var?
+
+//Önce diziyi filtrreleyip buluyorum. Sonra dizinin eleman sayısını ekrana yazdırıyorum
+var result4 = names.filter({$0.lowercased().contains("e")})
+print(result4.count)
+
+//Dizide A harfi ile başlayan İLK ELEMAN nedir?
+var result5 = names.first(where: {$0.starts(with: "A")})
+print(result5)
+
+
+//Dizide içerisinde e harfi geçen elemanları print et
+var result6 = names.filter({$0.lowercased().contains("e")})
+print(result6)
+
+
+//Dizide içerisinde t harfi geçen kaç eleman var?
+var result7 = names.filter({$0.lowercased().contains("t")})
+print(result7.count)
+
+//Dizide H harfi ile başlayan elemanları print et.
+var result8 = names.filter({$0.starts(with: "H")})
+print(result8)
+
+//Dizide içerisinde x harfi olan isim var mı?
+var result9 = names.filter({$0.contains("x")})
+
+if(result9.count &gt; 0){
+    print("VAR")
+}
+else{
+    print("YOK")
+}
+
+//Dizide toplam kaç eleman var?
+print(names.count)
+
+</string>
+			<key>ModifiedRange</key>
+			<string>{1, 1528}</string>
+			<key>OriginalContent</key>
+			<string></string>
+			<key>OriginalRange</key>
+			<string>{1, 0}</string>
+		</dict>
+	</array>
+	<key>File</key>
+	<string>Chapters/Chapter1.playgroundchapter/Pages/My Playground.playgroundpage/main.swift</string>
+</dict>
+</plist>
