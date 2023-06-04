@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>Diff</key>
+	<array>
+		<dict>
+			<key>ModifiedContent</key>
+			<string>//  SWIFT STRUCT
+
+//  var name = "Çağatay"
+//  var age = 18
+//  var status = false
+//  
+//  let productName = "IPhone"
+//  let price = 2000
+//  let stock = 5
+
+
+struct WebUser {
+    var name : String //property
+    var surname : String //property
+    var age : Int //property
+}
+
+var webuser1 = WebUser(name: "Çağatay", surname: "Yıldız", age: 18)
+
+print(webuser1.age)
+print(webuser1.name)
+
+
+
+struct Person {
+    var name : String = ""
+    var age : Int = 0
+}
+
+
+var person1 = Person(name: "Çağatay", age: 18)
+
+var person2 = Person()
+person2.name = "Orkun"
+person2.age = 20
+
+
+
+struct Product{
+    var name : String
+    var description = ""
+    var unitPrice = 0.0
+    var stock = 0
+}
+
+var product = Product(name: "IPhone")
+product.description = "Apple product.."
+product.unitPrice = 5500
+product.stock = 50
+
+
+struct Employee{
+    var firstName : String
+    var lastName : String
+    var age : Int = 0
+    var address : String
+    
+    func printReport() {
+        print("function...")
+    }
+    
+    func printFullName() {
+        print(firstName + " " + lastName)
+    }
+    
+    
+}
+
+
+var employee1 = Employee(firstName: "Aykut", lastName: "Arslan", address: "İstanbul")
+employee1.printReport()
+employee1.printFullName()
+
+
+
+
+
+
+
+
+</string>
+			<key>ModifiedRange</key>
+			<string>{1, 1226}</string>
+			<key>OriginalContent</key>
+			<string></string>
+			<key>OriginalRange</key>
+			<string>{1, 0}</string>
+		</dict>
+	</array>
+	<key>File</key>
+	<string>Chapters/Chapter1.playgroundchapter/Pages/My Playground.playgroundpage/main.swift</string>
+</dict>
+</plist>
