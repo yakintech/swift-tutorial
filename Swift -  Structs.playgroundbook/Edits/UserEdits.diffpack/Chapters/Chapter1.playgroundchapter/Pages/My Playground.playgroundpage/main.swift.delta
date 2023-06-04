@@ -58,6 +58,7 @@ product.stock = 50
 
 
 struct Employee{
+    
     var firstName : String
     var lastName : String
     var age : Int = 0
@@ -88,7 +89,7 @@ employee1.printFullName()
 
 </string>
 			<key>ModifiedRange</key>
-			<string>{1, 1226}</string>
+			<string>{1, 1231}</string>
 			<key>OriginalContent</key>
 			<string></string>
 			<key>OriginalRange</key>

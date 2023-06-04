@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>Diff</key>
+	<array>
+		<dict>
+			<key>ModifiedContent</key>
+			<string>//  struct Product{
+//      var name : String
+//      var unitPrice: Double
+//      var stock : Int
+//      
+//      func KDVCalc() -&gt; Double {
+//          var result = unitPrice * 1.18
+//          return  result
+//      }
+//  }
+//  
+//  var product1 = Product(name: "IPhone", unitPrice: 5500, stock: 10)
+//  var data = product1.KDVCalc()
+//  print(data)
+//  
+
+
+struct WebUser{
+    var email: String
+    var password : String
+    var firstName : String = ""
+    var lastName : String = ""
+    var address : Address
+}
+
+struct Address{
+    var street : String = ""
+    var no : String = ""
+    var city : String = ""
+    var country : String = ""
+}
+
+
+//Öncelikle address struct üzerinden bir kopya alıyorum. Daha sonra bunu webuser içerisine bırakacağım
+var address1 = Address(street: "4100", no: "5", city: "Ankara", country: "Türkiye")
+
+//Yeni bir webuser create ediyorum ( şablondan kopyalıyorum. )
+var webUser1 = WebUser(email: "cagatay@mail.com", password: "123", address: address1)
+
+
+
+struct Category{
+    var name : String = ""
+}
+
+struct Product {
+    var name : String 
+    var unitPrice : Double
+    var stock : Int
+    var category : Category
+}
+
+
+var category1 = Category(name: "Electronic")
+var product1 = Product(name: "IPhone", unitPrice: 5000, stock: 10, category: category1)
+
+struct Person{
+    var firstName : String
+    var lastName : String
+    var points : [Int]
+}
+
+
+
+
+
+
+
+
+</string>
+			<key>ModifiedRange</key>
+			<string>{1, 1390}</string>
+			<key>OriginalContent</key>
+			<string></string>
+			<key>OriginalRange</key>
+			<string>{1, 0}</string>
+		</dict>
+	</array>
+	<key>File</key>
+	<string>Chapters/Chapter1.playgroundchapter/Pages/My Playground.playgroundpage/main.swift</string>
+</dict>
+</plist>

@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>Diff</key>
+	<array>
+		<dict>
+			<key>ModifiedContent</key>
+			<string>import Foundation
+
+enum OrderStatus{
+    case pending, completed, cancelled
+}
+
+
+struct Order{
+    var orderNumber: Int = 0
+    var firstName: String
+    var lastName:String
+    var status: OrderStatus
+}
+
+var order1 = Order(firstName: "Cagatay", lastName: "Yıldız", status: .cancelled)
+
+var country = "   Türkiye"
+country.trimmingCharacters(in: .whitespaces)
+
+var data : OrderStatus  = .cancelled
+
+
+
+
+enum UserStatus : Int{
+    case offline = 0
+    case online = 1
+    case pending = 2
+}
+
+
+var data2 : Int = UserStatus.pending.rawValue
+print(data2)
+
+
+
+
+enum Distance {
+    case km(String)
+    case miles(String)
+}
+
+
+var result : Distance = .km("100")
+print(result)
+
+
+
+
+enum Pizza {
+    case small(inches: Int)
+}
+</string>
+			<key>ModifiedRange</key>
+			<string>{0, 711}</string>
+			<key>OriginalContent</key>
+			<string>
+</string>
+			<key>OriginalRange</key>
+			<string>{0, 1}</string>
+		</dict>
+	</array>
+	<key>File</key>
+	<string>Chapters/Chapter1.playgroundchapter/Pages/My Playground.playgroundpage/main.swift</string>
+</dict>
+</plist>

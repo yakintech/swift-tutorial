@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>Diff</key>
+	<array>
+		<dict>
+			<key>ModifiedContent</key>
+			<string>import Foundation
+
+struct User {
+    var id: Int
+    var email: String
+    var firstName: String
+    var lastName: String
+    var age: Int
+}
+
+var users = [User]()
+
+let firstNames = ["John", "Emily", "Michael", "Emma", "Daniel", "Olivia", "David", "Sophia", "Matthew", "Ava"]
+let lastNames = ["Smith", "Johnson", "Williams", "Brown", "Jones", "Garcia", "Miller", "Davis", "Martinez", "Lopez"]
+
+for i in 1...50 {
+    let id = i
+    let email = "user\(i)@example.com"
+    let firstName = firstNames.randomElement()!
+    let lastName = lastNames.randomElement()!
+    let age = Int.random(in: 18...65)
+    
+    let user = User(id: id, email: email, firstName: firstName, lastName: lastName, age: age)
+    users.append(user)
+}
+
+
+
+//yaş aralığı 20 - 25 olan userları listele
+var filteredUsers = users.filter({$0.age &gt;= 20 &amp;&amp; $0.age &lt;= 25})
+//  print(filteredUsers)
+
+
+//Adı emily olan userları listele
+var filteredUsers2 = users.filter({$0.firstName == "Emily"})
+//  print(filteredUsers2)
+
+
+//Soyadı G ile başlayanları ekrana yazdır
+var filteredUsers3 = users.filter({$0.lastName.starts(with: "G")})
+//  print(filteredUsers3)
+
+
+    //ID si 5 olan ürünü ekrana yazdır
+var user = users.first(where: {$0.id == 5})
+print(user)
+</string>
+			<key>ModifiedRange</key>
+			<string>{0, 1215}</string>
+			<key>OriginalContent</key>
+			<string>
+</string>
+			<key>OriginalRange</key>
+			<string>{0, 1}</string>
+		</dict>
+	</array>
+	<key>File</key>
+	<string>Chapters/Chapter1.playgroundchapter/Pages/My Playground.playgroundpage/main.swift</string>
+</dict>
+</plist>

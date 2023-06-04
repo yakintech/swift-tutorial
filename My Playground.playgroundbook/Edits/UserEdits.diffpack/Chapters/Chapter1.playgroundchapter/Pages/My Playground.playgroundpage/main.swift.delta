@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>Diff</key>
+	<array>
+		<dict>
+			<key>ModifiedContent</key>
+			<string>//Functions Samples
+
+//Dışarıdan bir integer dizisi alan ve kaçının pozitif olduğunu ekrana yazdıran metot?
+
+var numbers : [Int] = [3,6,1,-22,-10,5,-93,2,0,2]
+
+func positiveControl(numberArray: [Int]) {
+    
+    var result = numbers.filter({$0 &gt; 0}).count
+    print(result)
+    
+}
+
+positiveControl(numberArray: numbers)
+
+
+// Verilen bir metinde ‘w’ VE ‘e’ harfleri var mı? (string alıp boolean dönecek)
+
+func checkWord(word:String) -&gt; Bool {
+    
+    var control1 = word.contains("w")
+    var control2 = word.contains("e")
+    
+    if(control1 == true &amp;&amp; control2 == true){
+        return true
+    }
+    else{
+        return false
+    }
+}
+
+var result = checkWord(word: "www")
+print(result)
+
+
+//Dışarıdan bir metin alan, aldığı metnin sadece ilk harfini büyültüp metni bana geri veren metot. Örneğin çağatay geldi Çağatay olacak
+
+//  
+//  func upperWordFirstChar(name:String) -&gt; String {
+//      
+////      var result = name
+////      
+//  }
+//  
+
+
+var name = "çağatay"
+
+print(name.first!.uppercased())
+
+</string>
+			<key>ModifiedRange</key>
+			<string>{0, 1003}</string>
+			<key>OriginalContent</key>
+			<string></string>
+			<key>OriginalRange</key>
+			<string>{0, 0}</string>
+		</dict>
+	</array>
+	<key>File</key>
+	<string>Chapters/Chapter1.playgroundchapter/Pages/My Playground.playgroundpage/main.swift</string>
+</dict>
+</plist>

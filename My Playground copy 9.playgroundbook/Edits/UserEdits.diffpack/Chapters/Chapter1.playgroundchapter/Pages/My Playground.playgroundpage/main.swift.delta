@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>Diff</key>
+	<array>
+		<dict>
+			<key>ModifiedContent</key>
+			<string>//Swift Index
+
+var name = "Lamb of God"
+
+
+//first Index function metnin aranan ilk karakter indexini bulup bana verir
+//Birinci kelimeyi büyütüp ekrana yaz //LAMB
+
+var indexNo = name.firstIndex(of: " ")
+var result = name[..&lt;indexNo!]
+
+print(result.uppercased())
+
+
+//RANGE MANTIGI
+var index1 = name.firstIndex(of: "b")
+var index2 = name.firstIndex(of: "d")
+var range = index1!..&lt;index2!
+    
+print(name[range])
+
+
+
+
+
+
+
+
+
+
+</string>
+			<key>ModifiedRange</key>
+			<string>{1, 420}</string>
+			<key>OriginalContent</key>
+			<string></string>
+			<key>OriginalRange</key>
+			<string>{1, 0}</string>
+		</dict>
+	</array>
+	<key>File</key>
+	<string>Chapters/Chapter1.playgroundchapter/Pages/My Playground.playgroundpage/main.swift</string>
+</dict>
+</plist>

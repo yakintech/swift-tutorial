@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>Diff</key>
+	<array>
+		<dict>
+			<key>ModifiedContent</key>
+			<string>//SWIFT FUNCTIONS - 2
+
+func hello(name:String) {
+    print("Hello " + name)
+}
+
+
+struct User{
+    var name:String
+    var lastName:String
+    var age:Int
+}
+
+
+//user age calculator
+//bu fonksiyon dışarıdan bir user alır yaşını hesaplayıp 18 den büyükse HOŞGELDİN ÇAĞATAY YILDIZ değilse NETFLIX COCUK
+func netflixAgeControl(user:User) {
+    
+    if(user.age &gt;= 18){
+        print("Hoşgeldin " + user.name + " " + user.lastName)
+    }
+    else{
+        print("NETFLIX COCUK " + user.name)
+    }
+}
+
+var user1 = User(name: "Çağatay", lastName: "Yıldız", age: 20);
+
+netflixAgeControl(user: user1)
+
+//Dışarıdan aldığı userın firstName ve lastName lerini birleştirip aralarında boşluk bırakarak ve UPPER ederek bana versin
+
+func userFullNameFormat(user:User) -&gt; String {
+    var result = user.name.uppercased() + " " + user.lastName.uppercased()
+    return result;
+}
+
+
+var user2 = User(name: "Müge", lastName: "Çalışkan", age: 33)
+
+var result = userFullNameFormat(user: user2)
+print(result)
+
+
+
+struct Product{
+    var name: String
+    var stock : Int
+    var price : Double
+    var status : Bool = false
+}
+
+
+func stockCheck(product: Product) -&gt; Product {
+    
+    //stock durumu eğer 5 den küçükse product status false yap geri gönder
+    
+    var newProduct = product
+    
+    if(product.stock &lt; 5){
+        newProduct.status = false
+    }
+    else{
+        newProduct.status = true
+    }
+    
+    return newProduct
+    
+}
+
+
+
+</string>
+			<key>ModifiedRange</key>
+			<string>{1, 1418}</string>
+			<key>OriginalContent</key>
+			<string></string>
+			<key>OriginalRange</key>
+			<string>{1, 0}</string>
+		</dict>
+	</array>
+	<key>File</key>
+	<string>Chapters/Chapter1.playgroundchapter/Pages/My Playground.playgroundpage/main.swift</string>
+</dict>
+</plist>
