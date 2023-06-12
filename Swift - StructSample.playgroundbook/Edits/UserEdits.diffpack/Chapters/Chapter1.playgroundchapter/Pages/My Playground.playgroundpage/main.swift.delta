@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>Diff</key>
+	<array>
+		<dict>
+			<key>ModifiedContent</key>
+			<string>//STRUCT
+//first, filter
+
+struct Product{
+    var id:Int
+    var name:String
+    var unitPrice: Double
+}
+
+struct Calc{
+    func calc1() {
+        print("Hello calc1")
+    }
+    
+    func calc2() {
+        print("Hello calc1")
+    }
+}
+
+
+var product = Product(id: 1, name: "", unitPrice: 22.09)
+var calc = Calc()
+calc.calc1()
+
+
+struct WebUser{
+    var id: Int
+    var name: String
+    var surname: String
+    
+    
+    func getFullName() {
+        var name = "Fırat";
+        print(self.name + " " + surname)
+    }
+    
+}
+
+var webuser = WebUser(id: 1, name: "Çağatay", surname: "Yıldız")
+webuser.getFullName()
+
+
+
+
+
+
+
+
+
+</string>
+			<key>ModifiedRange</key>
+			<string>{1, 617}</string>
+			<key>OriginalContent</key>
+			<string></string>
+			<key>OriginalRange</key>
+			<string>{1, 0}</string>
+		</dict>
+	</array>
+	<key>File</key>
+	<string>Chapters/Chapter1.playgroundchapter/Pages/My Playground.playgroundpage/main.swift</string>
+</dict>
+</plist>

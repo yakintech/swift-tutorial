@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>Diff</key>
+	<array>
+		<dict>
+			<key>ModifiedContent</key>
+			<string>// STRUCT AND CLASS
+//value type
+struct Customer{
+    var name : String
+    var surname: String
+    var city : String
+}
+var customer = Customer(name: "", surname: "", city: "İstanbul")
+var customer2 = Customer(name: "", surname: "", city: "İzmir")
+
+customer2 = customer
+
+customer2.city = "Ankara"
+
+print(customer.city)
+
+
+
+
+
+    //reference type
+
+class Supplier{
+    var companyName : String = ""
+    var contactName : String = ""
+}
+
+
+var supplier = Supplier()
+supplier.companyName = "Apple"
+
+var supplier2 = Supplier()
+supplier2 = supplier
+supplier2.companyName = "Huawei"
+supplier2.contactName = "John"
+
+print(supplier2.companyName)
+print(supplier.companyName)
+print(supplier.contactName)
+print(supplier2.contactName)
+
+
+
+
+class Admin{
+    var name: String
+    var surname: String
+    
+    init(firstName:String, lastName:String){
+        self.name = firstName
+        self.surname = lastName
+    }
+}
+
+
+
+
+class BaseModel{
+    var id : Int = 10
+}
+
+
+class User : BaseModel{
+    var name : String = ""
+    var surname : String = ""
+}
+
+
+var user = User()
+
+print(user.id)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</string>
+			<key>ModifiedRange</key>
+			<string>{1, 1082}</string>
+			<key>OriginalContent</key>
+			<string></string>
+			<key>OriginalRange</key>
+			<string>{1, 0}</string>
+		</dict>
+	</array>
+	<key>File</key>
+	<string>Chapters/Chapter1.playgroundchapter/Pages/My Playground.playgroundpage/main.swift</string>
+</dict>
+</plist>
